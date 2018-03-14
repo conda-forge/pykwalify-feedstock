@@ -1,6 +1,6 @@
 {% set name = "pykwalify" %}
-{% set version = "1.6.0" %}
-{% set checksum = "2298fafe84dc68161835f62a1b8d0d72dd749d5742baa196224882a6ac2ff844" %}
+{% set version = "1.6.1" %}
+{% set checksum = "191fd3f457f23c0aa8538c3a5c0249f70eeb1046e88d0eaaef928e09c44dff8d" %}
 
 package:
   name: {{ name }}
@@ -13,14 +13,15 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - pykwalify = pykwalify.cli:cli_entrypoint
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
@@ -38,6 +39,7 @@ test:
 about:
   home: http://github.com/grokzen/pykwalify
   license: MIT
+  license_file: LICENSE
   summary: Python lib/cli for JSON/YAML schema validation
 
 extra:
