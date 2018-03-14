@@ -14,9 +14,7 @@ Summary: Python lib/cli for JSON/YAML schema validation
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pykwalify-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pykwalify-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pykwalify-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pykwalify-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pykwalify-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pykwalify-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pykwalify-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pykwalify-feedstock)
 
 Current release info
 ====================
